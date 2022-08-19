@@ -7,41 +7,55 @@ namespace Atividade_1
 {
     public class Evento
     {
-        public string? Nome { get; set; }
-        public string? Local { get; set; }
-        public float? Valor { get; set; }
-        private List<Pessoa>? pessoas;
-        public List<Pessoa>? Pessoas
+        public string Nome { get; set; }
+        public string Local { get; set; }
+        private double? valor;
+        public double? Valor
+        {
+            get{
+                return valor;
+            }
+        }
+        public bool Gratuito { get; set; }
+        private ICollection<Pessoa> pessoas;
+        public ICollection<Pessoa> Pessoas
         {
             get
             {
-                return Pessoas;
+                return pessoas;
             }
             set
             {
-                List<Pessoa> newPessoas = value;
+                ICollection<Pessoa> newPessoas = value;
                 if (newPessoas.Count <= 20)
                 {
-                    Console.WriteLine("numero de pessoas menor ou igual a 20");
                     this.pessoas = newPessoas;
                 }
                 else
                 {
-                    throw new ArgumentException("Quantidade de pessoas superior a 20");
+                    throw new ArgumentException("Quantidade de pessoas excedida");
                 }
             }
         }
 
-        public bool validarQtdPessoas(List<Pessoa> newPessoas)
+        public void AvaliarGratuidade(double? valor)
         {
-            if (newPessoas.Count <= 20)
+            if (!Gratuito)
             {
-                return true;
+                if (valor != null)
+                {
+                    this.valor = valor;
+                }
+                else
+                {
+                    throw new ArgumentException("É preciso passar o valor");
+                }
             }
-            return false;
-
+            else
+            {
+                this.valor = 0;
+            }
         }
-
 
     }
 }
