@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\alunovdi\\Documents\\Atividade-Evento-C-\\Atividade 1.csproj": {}
+    "C:\\Projetos\\C#\\Atividade 1\\Atividade-Evento-C-\\Atividade 1.csproj": {}
   },
   "projects": {
-    "C:\\Users\\alunovdi\\Documents\\Atividade-Evento-C-\\Atividade 1.csproj": {
+    "C:\\Projetos\\C#\\Atividade 1\\Atividade-Evento-C-\\Atividade 1.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\alunovdi\\Documents\\Atividade-Evento-C-\\Atividade 1.csproj",
+        "projectUniqueName": "C:\\Projetos\\C#\\Atividade 1\\Atividade-Evento-C-\\Atividade 1.csproj",
         "projectName": "Atividade 1",
-        "projectPath": "C:\\Users\\alunovdi\\Documents\\Atividade-Evento-C-\\Atividade 1.csproj",
-        "packagesPath": "C:\\Users\\alunovdi\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\alunovdi\\Documents\\Atividade-Evento-C-\\obj\\",
+        "projectPath": "C:\\Projetos\\C#\\Atividade 1\\Atividade-Evento-C-\\Atividade 1.csproj",
+        "packagesPath": "C:\\Users\\micae\\.nuget\\packages\\",
+        "outputPath": "C:\\Projetos\\C#\\Atividade 1\\Atividade-Evento-C-\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\alunovdi\\AppData\\Roaming\\NuGet\\NuGet.Config"
+          "C:\\Users\\micae\\AppData\\Roaming\\NuGet\\NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net6.0"

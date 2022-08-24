@@ -8,19 +8,20 @@ pessoa1.Idade = 19;
 
 List<Pessoa> pessoas = new List<Pessoa>();
 
-for (int i = 0; i <= 1; i++)
+for (int i = 0; i <= 19; i++)
 {
     pessoas.Add(pessoa1);
 }
 
 Evento evento = new Evento();
-evento.Nome = "BALADINHA BACANA";
+evento.Nome = "Evento pago";
+evento.Local = "Senai";
 evento.Pessoas = pessoas;
 evento.Gratuito = false;
 evento.AvaliarGratuidade(60);
+System.Console.WriteLine(evento.ToString());
 
 int j = 1;
-
 foreach (var pessoa in evento.Pessoas)
 {
     Console.WriteLine("Pessoa " + j);
@@ -30,4 +31,11 @@ foreach (var pessoa in evento.Pessoas)
     j++;
     System.Console.WriteLine();
 }
-System.Console.WriteLine("Valor " + evento.Valor);
+
+Evento eventoGrat = new Evento();
+eventoGrat.Nome = "Evento gratuito";
+eventoGrat.Local = "Cajazeiras";
+eventoGrat.Pessoas = pessoas;
+eventoGrat.Gratuito = true;
+eventoGrat.AvaliarGratuidade(50);
+System.Console.WriteLine(eventoGrat);

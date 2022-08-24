@@ -56,6 +56,9 @@ namespace Atividade_1
                 this.valor = 0;
             }
         }
-
+        public override string ToString()
+        {
+            return "Nome: " + Nome + "\nLocal: " + Local + "\nValor: " + Valor.ToString();
+        }
     }
 }
